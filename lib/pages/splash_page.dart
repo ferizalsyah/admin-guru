@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/theme.dart';
 
@@ -15,7 +14,7 @@ class _SplashPageState extends State<SplashPage> {
 
     Timer(
       Duration(seconds: 3),
-      () => Navigator.pushNamed(context, '/sign-in'),
+      () => Navigator.pushNamed(context, '/getstarted'),
     );
     super.initState();
   }
@@ -29,9 +28,10 @@ class _SplashPageState extends State<SplashPage> {
           width: 130,
           height: 150,
           decoration: BoxDecoration(
-              image: DecorationImage(
-            image: AssetImage('assets/icon_splash.png'),
-          )),
+            image: DecorationImage(
+              image: AssetImage('assets/logo_agama.png'),
+            ),
+          ),
         ),
       ),
     );

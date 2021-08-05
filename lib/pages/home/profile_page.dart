@@ -29,14 +29,14 @@ class ProfilePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Hello Nopan ',
+                        'Hello Eka ',
                         style: primaryTextStyle.copyWith(
                           fontSize: 24,
                           fontWeight: semiBold,
                         ),
                       ),
                       Text(
-                        '@NopanCY',
+                        '@EkaTri',
                         style: primaryTextStyle.copyWith(
                           fontSize: 16,
                         ),

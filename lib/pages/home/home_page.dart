@@ -20,13 +20,13 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Nopan Cahyadi',
+                    'Eka Tri Noviana',
                     style: primaryTextStyle.copyWith(
                       fontSize: 24,
                       fontWeight: bold,
                     ),
                   ),
-                  Text('@Nopancahyadi',
+                  Text('@EkaTri',
                       style: primaryTextStyle.copyWith(
                         fontSize: 16,
                       ))
@@ -34,7 +34,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, '/notifikasi');
+              },
               child: Container(
                 width: 30,
                 height: 30,
@@ -191,7 +193,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             ChatTile(),
-            ChatTile(),
+            // ChatTile(),
           ],
         ),
       );

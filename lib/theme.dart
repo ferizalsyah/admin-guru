@@ -6,8 +6,8 @@ double defaulMargin = 30.0;
 Color backgroundColor1 = Color(0xffFFFFFF);
 Color backgroundColor2 = Color(0xff2C96F1);
 Color backgroundColor3 = Color(0xff566678);
-Color backgroundColor4 = Color(0xff2B2937);
-Color backgroundColor5 = Color(0xffECEDEF);
+Color backgroundColor4 = Color(0xff999999);
+Color backgroundColor5 = Color(0xfff7f2f2);
 Color backgroundColor6 = Color(0xff0eed37);
 Color backgroundColor7 = Color(0xffe8e1e1);
 Color backgroundColor8 = Color(0xffeada2a2);
@@ -16,6 +16,7 @@ Color secondaryTextColor = Color(0xffF1F0F2);
 Color primaryTextColor = Color(0xff0f0101);
 Color greenTextColor = Color(0xff0eed37);
 Color bottomColor = Color(0xff880ddb);
+Color subtitleColor = Color(0xff504F5E);
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(
   color: primaryTextColor,
@@ -27,6 +28,10 @@ TextStyle secondaryTextStyle = GoogleFonts.poppins(
 
 TextStyle greenTextStyle = GoogleFonts.poppins(
   color: greenTextColor,
+);
+
+TextStyle subtitleTextStyle = GoogleFonts.poppins(
+  color: subtitleColor,
 );
 
 FontWeight light = FontWeight.w300;

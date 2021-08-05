@@ -11,6 +11,7 @@ class _PenilaianPageState extends State<PenilaianPage> {
   String _valNama;
   String _valPelajaran;
   String _valKelas;
+  String _valNIlai;
   List _listNama = [
     'Nopan Cahyadi',
     'Irvan Renaldi',
@@ -28,6 +29,18 @@ class _PenilaianPageState extends State<PenilaianPage> {
     '4',
     '5',
     '6',
+  ];
+  List _listNilai = [
+    '10',
+    '20',
+    '30',
+    '40',
+    '50',
+    '60',
+    '70',
+    '80',
+    '90',
+    '100',
   ];
 
   @override
@@ -102,8 +115,49 @@ class _PenilaianPageState extends State<PenilaianPage> {
                   _valKelas = value;
                 });
               },
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            DropdownButton(
+              hint: Text(' --- Pilih Nilai ---'),
+              value: _valNIlai,
+              elevation: 8,
+              icon: Icon(Icons.arrow_drop_down_circle),
+              isExpanded: true,
+              items: _listNilai.map((value) {
+                return DropdownMenuItem(
+                  child: Text(value),
+                  value: value,
+                );
+              }).toList(),
+              onChanged: (value) {
+                setState(() {
+                  _valNIlai = value;
+                });
+              },
             )
           ],
+        ),
+      ),
+      bottomNavigationBar: TextButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/hasil-nilai');
+        },
+        child: Text(
+          'Kirim',
+          style: primaryTextStyle.copyWith(
+            fontSize: 16,
+          ),
+        ),
+        style: TextButton.styleFrom(
+          backgroundColor: greenTextColor,
+          padding: EdgeInsets.symmetric(
+            horizontal: 20,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
       ),
     );

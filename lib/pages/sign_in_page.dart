@@ -11,7 +11,7 @@ class SignInPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Login',
+              'Login Siswa/i',
               style: primaryTextStyle.copyWith(
                 fontSize: 24,
                 fontWeight: bold,
@@ -179,6 +179,7 @@ class SignInPage extends StatelessWidget {
             GestureDetector(
               onTap: () {
                 Navigator.pushNamed(context, '/sign-up');
+                // Navigator.pushNamed(context, '/getstarted');
               },
               child: Text(
                 'Sign Up',
